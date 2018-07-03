@@ -5,6 +5,15 @@
     <router-view/>
     <vue-slide-bar v-model="simpleValue"/>
     <br />
+    <div class="form__field">
+      <div class="form__label">
+        <strong>Please choose a color:</strong>
+      </div>
+      <div class="form__input">
+        <swatches v-model="color">
+        </swatches>
+      </div>
+    </div>
 
     <radio name="robot" value="1" checked>
   	   I'm a robot 🤖
@@ -33,7 +42,8 @@ export default {
   name: 'App',
   data () {
     return {
-      simpleValue: 50
+      simpleValue: 50,
+      color: '#1CA085'
     }
   }
 }
@@ -60,4 +70,5 @@ export default {
   background: url("https://cdn.shopify.com/s/files/1/1061/1924/products/Hot_Coffee_Emoji_large.png?v=1480481030") no-repeat center center;
   background-size: 100% 100%;
 }
+.color--red{color:#f26556;transition:color .8s}.color--orange{color:#f6a820;transition:color .8s}.color--green{color:#4ccb7c;transition:color .8s}.color--purple{color:#9874db;transition:color .8s}
 </style>
