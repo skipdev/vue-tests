@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Playing around with vue.js</h2>
+    <p>{{desc}} thing</p>
   </div>
 </template>
 
@@ -10,7 +11,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: "Steph's page"
+      msg: "Steph's page",
+      desc: "This is a "
     }
   }
 }
